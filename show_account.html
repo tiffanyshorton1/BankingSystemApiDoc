@@ -9,7 +9,7 @@
 
         <p>public member function</p>
 
-        <h3>acount::show_account()</h3>
+        <h2><span style="color: blue">acount</span>::show_account()</h2>
         <hr>
         <h6>void show_account()const;</h6>
         <p>Displays user account information to the user.</p>
@@ -24,8 +24,39 @@
 
         <p>Example</p>
         <hr>
-        <p></p>
+        <p><pre>#include < iostream >
+         using namespace std;
+         
+         void display_sp(int n) {
+            account ac;
+	         bool flag=false;
+	         ifstream inFile;
+	         inFile.open("account.dat",ios::binary);
+         }
+         
+         void display_sp();
+         
+         int main () {
+         
+            char choice;
+            cout << "Press "1" to view account information" << endl;
+         
+            if (choice == 1){
+               display_sp();
+            }
+            else {
+               return 0;
+            }
+         }
+         
+            </pre></p>
         <p>Output:</p>
+        <p><pre>
+         ACCOUNT NO. :
+         ACCOUNT HOLDER NAME :
+         ACCOUNT TYPE (C/S) :
+         BALANCE AMOUNT :
+              </pre></p>
 
         <p>See Also</p>
         <hr>
