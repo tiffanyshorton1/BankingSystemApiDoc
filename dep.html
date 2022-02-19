@@ -13,22 +13,94 @@
         <h2><span style="color: blue">account</span>::dep()</h2>
         <hr>
         <h6>void dep(int);</h6>
-        <p>Function to accept money and add to balance amount.</p>
+        <p>Function to deposit money and add to balance amount.</p>
 
-        <p>Parameters</p>
+        <p id="heading">Parameters</p>
+        <hr>
+        <p>int </p>
+        <p>An integer value.</p>
+
+        <p id="heading">Return value</p>
         <hr>
         <p>none</p>
 
-        <p>Return value</p>
+        <p id="heading">Example</p>
         <hr>
-        <p>none</p>
+        <p><pre>#include < iostream >
+         using namespace std;
+         
+         void deposit_withdraw(int n, int option)
+{
+	int amt;
+	bool found=false;
+	account ac;
+	fstream File;
+	File.open("account.dat", ios::binary|ios::in|ios::out);
+	if(!File)
+	{
+		cout<<"File could not be open !! Press any Key...";
+		return;
+	}
+	while(!File.eof() && found==false)
+	{
+		File.read(reinterpret_cast<char *> (&ac), sizeof(account));
+		if(ac.retacno()==n)
+		{
+			ac.show_account();
+			if(option==1)
+			{
+				cout<<"\n\n\tTO DEPOSITE AMOUNT ";
+				cout<<"\n\nEnter The amount to be deposited";
+				cin>>amt;
+				ac.dep(amt);
+			}
+			if(option==2)
+			{
+				cout<<"\n\n\tTO WITHDRAW AMOUNT ";
+				cout<<"\n\nEnter The amount to be withdraw";
+				cin>>amt;
+				int bal=ac.retdeposit()-amt;
+				if((bal<0)
+					cout<<"Insufficience balance";
+				else
+					ac.draw(amt);
+			}
+			int pos=(-1)*static_cast<int>(sizeof(ac));
+			File.seekp(pos,ios::cur);
+			File.write(reinterpret_cast<char *> (&ac), sizeof(account));
+			cout<<"\n\n\t Record Updated";
+			found=true;
+	       }
+         }
+	File.close();
+	if(found==false)
+		cout<<"\n\n Record Not Found ";
+      }
 
-        <p>Example</p>
+         
+         void deposit_withdraw(int, int);
+         
+         int main () {
+         
+            int choice;
+            int num;
+            cout << "Press "1" to deposit money." << endl;
+         
+            if (choice == 1){
+               deposit_withdraw(num, 1);
+            }
+            else {
+               return 0;
+            }
+         }
+
+        <p id="heading">Output:</p>
         <hr>
-        <p></p>
-        <p>Output:</p>
-
-        <p>See Also</p>
+        <p><pre>
+         ENTER AMOUNT TO BE DEPOSITED:
+              </pre></p>
+        
+        <p id="heading">See Also</p>
         <hr>
 
         <table border = "1">
