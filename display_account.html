@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 	<head>
-	<title> acount::rettype - C++ Reference </title>
+	<title> acount::show_account - C++ Reference </title>
    <link rel="stylesheet" href="functionPage.css">
 	</head>
 
@@ -10,10 +10,10 @@
 
         <p>public member function</p>
 
-        <h2><span style="color: blue">acount</span>::rettype()</h2>
+        <h2><span style="color: blue">acount</span>::show_account()</h2>
         <hr>
-        <h6>char rettype() const;</h6>
-        <p>function to return type of account</p>
+        <h6>void show_account()const;</h6>
+        <p>Displays user account information to the user.</p>
 
         <p id="heading">Parameters</p>
         <hr>
@@ -25,9 +25,40 @@
 
         <p id="heading">Example</p>
         <hr>
-        <p></p>
-        <p id="heading">Output:</p>
-        <hr>
+        <p><pre>#include < iostream >
+         using namespace std;
+         
+         void display_sp(int n) {
+            account ac;
+	         bool flag=false;
+	         ifstream inFile;
+	         inFile.open("account.dat",ios::binary);
+         }
+         
+         void display_sp();
+         
+         int main () {
+         
+            int choice;
+            cout << "Press "1" to view account information" << endl;
+         
+            if (choice == 1){
+               display_sp();
+            }
+            else {
+               return 0;
+            }
+         }
+         
+            </pre></p>
+         <p id="heading">Output:</p>
+         <hr>
+        <p><pre>
+         ACCOUNT NO. :
+         ACCOUNT HOLDER NAME :
+         ACCOUNT TYPE (C/S) :
+         BALANCE AMOUNT : 
+              </pre></p>
 
         <p id="heading">See Also</p>
         <hr>
@@ -39,14 +70,10 @@
             </tr>
             
             <tr>
-               <td><a href = "show_account.html">account::show_account()</a></td>
+               <td><a href = "modify.html">account::modify()</a></td>
                <td>Row 2, Column 2</td>
             </tr>
             <tr>
-                <td><a href = "modify.html">account::modify()</a></td>
-                <td>Row 2, Column 2</td>
-             </tr>
-             <tr>
                 <td><a href = "dep.html">account::dep(int)</a></td>
                 <td>Row 2, Column 2</td>
              </tr>
@@ -63,7 +90,11 @@
                 <td>Row 2, Column 2</td>
              </tr>
              <tr>
-                <td><a href = "rettype.html">account::rettype()</a></td>
+                <td><a href = "balAmt.html">account::balAmt()</a></td>
+                <td>Row 2, Column 2</td>
+             </tr>
+             <tr>
+                <td><a href = "accType.html">account::accType()</a></td>
                 <td>Row 2, Column 2</td>
              </tr>
          </table>

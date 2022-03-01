@@ -46,7 +46,7 @@ void modify_account(int n) {
 		File.read(reinterpret_cast<char *> (&ac), sizeof(account));
 		if(ac.retacno()==n)
 		{
-			ac.show_account();
+			ac.display_account();
 			cout<<"\n\nEnter The New Details of account"<<endl;
 			ac.modify();
          int pos=(-1)*static_cast<int>(sizeof(account));
@@ -96,7 +96,7 @@ int main () {
             </tr>
             
             <tr>
-               <td><a href = "show_account.html">account::show_account()</a></td>
+               <td><a href = "display_account.html">account::display_account()</a></td>
                <td>Row 2, Column 2</td>
             </tr>
             <tr>
@@ -116,11 +116,11 @@ int main () {
                 <td>Row 2, Column 2</td>
              </tr>
              <tr>
-                <td><a href = "retdeposit.html">account::retdeposit()</a></td>
+                <td><a href = "balAmt.html">account::balAmt()</a></td>
                 <td>Row 2, Column 2</td>
              </tr>
              <tr>
-                <td><a href = "rettype.html">account::rettype()</a></td>
+                <td><a href = "accType.html">account::accType()</a></td>
                 <td>Row 2, Column 2</td>
              </tr>
          </table>
