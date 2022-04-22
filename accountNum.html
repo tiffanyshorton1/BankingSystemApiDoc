@@ -6,14 +6,16 @@
 	</head>
 
 	<body>
-        <p><a href = "index.html"><< BACK</a></p>
+      <p><a href = "index.html"><< BACK</a></p>
 
-        <p>public member function</p>
+      <p id="public">public member function</p>
 
         <h2><span style="color: blue">user</span>::accountNum()</h2>
-        <hr>
         <h6>int accountNum() const;</h6>
-        <p>Function to return account number</p>
+        <hr>
+        
+        <p id="heading">Functionality</p>
+        <p>Function to return user account number</p>
 
         <p id="heading">Parameters</p>
         <hr>
@@ -26,9 +28,26 @@
 
         <p id="heading">Example</p>
         <hr>
-        <p></p>
+        <p><pre>#include < iostream >
+using namespace std;
+                           
+int main()
+{
+   int accNum;
+   cout << "Enter account number:" << endl;
+   cin >> accNum;
+                   
+   user ba;
+   ba.accountNum = accountNumber;
+   cout << accountNumber; 
+                    
+   return 0;
+}
+                  
+                     </pre></p>
         <p id="heading">Output:</p>
         <hr>
+      
 
         <p id="heading">Member Functions</p>
         <hr>
@@ -41,7 +60,7 @@
             
             <tr>
                <td><a href = "display.html">display()</a></td>
-               <td>Displays user account</td>>
+               <td>Displays user account</td>
             </tr>
             <tr>
                 <td><a href = "edit.html">edit()</a></td>
@@ -61,11 +80,11 @@
              </tr>
              <tr>
                 <td><a href = "balAmt.html">balAmt()</a></td>
-                <td>Row 2, Column 2</td>
+                <td>Returns balance amount</td>
              </tr>
              <tr>
                 <td><a href = "accType.html">accType()</a></td>
-                <td>Row 2, Column 2</td>
+                <td>Returns account type</td>
              </tr>
          </table>
 

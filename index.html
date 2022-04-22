@@ -2,22 +2,50 @@
 <html>
 	<head>
 	<title> Banking System API DOC </title>
+        <link rel="stylesheet" href="functionPage.css">
 	</head>
 
 	<body>
-        <p>Greetings! Welcome to my Senior Capstone project page on Banking System APIs. 
+        <h2 id ="welcome"> Greetings! Welcome to my Senior Capstone project page on Banking System APIs.</h2> 
 
-        </p> 
+        <h3 align="center"> 'USER' CLASS MEMBER FUNCTIONS </h3>
+        <h3 align="center"> API DOCUMENTATION </h3>
+        <div class="topnav">
+                <a href = "open.html">void open();</a>
+                <a href = "display.html">void display() const;</a>
+                <a href = "edit.html">void edit();</a>
+                <a href = "add.html">void add(int);</a>
+                <a href = "sub.html">void sub(int);</a>
+                <a href = "review.html">void review() const;</a>
+                <a href = "accountNum.html">int accountNum() const;</a>
+                <a href = "balAmt.html">int balAmt() const;</a>
+                <a href = "accType.html">char accType() const;</a>
+        </div>
+        <div class="functions">
+         <p align="center"><b>Creating API Documentation </b> </p>
 
-        <h3> account class functions </h3>
-        <p><a href = "open.html">void open();</a></p>
-        <p><a href = "display.html">void display() const;</a></p>
-        <p><a href = "edit.html">void edit();</a></p>
-        <p><a href = "add.html">void add(int);</a></p>
-        <p><a href = "sub.html">void sub(int);</a></p>
-        <p><a href = "review.html">void review() const;</a></p>
-        <p><a href = "accountNum.html">int accountNum() const;</a></p>
-        <p><a href = "balAmt.html">int balAmt() const;</a></p>
-        <p><a href = "accType.html">char accType() const;</a></p>
+        <p span style="font-size: small"; align: "center">In creating the documentation for my API library, I utilized GitHub, GithHub Desktop and Visual Studio code. 
+                GitHub is a cloud-based hosting service that lets you manage Git repositories using a GUI (graphic user interface) instead of the command line or a web browser. Ultimately, helps developers store and manage their code, as well as track and control changes to their code. I stored my codes on their online platform. Visual Studio Code is a source-code editor made by Microsoft for Windows. This software is useful in building and debugging modern web and cloud applications. I utilized Visual Studio Code on my local computer to create the HTML webpage that showcases the documentation for my class library. HTML stands for Hypertext Markup Language and is the standard markup language for documents designed to be displayed in a web browser. It also allowed me to further customize my website using CSS, which stands for Cascading Style Sheets. It is a style sheet language used for describing the presentation of a document written in a markup language such as HTML. HTML and CSS files were programmed and modified within the Visual Studio Code software and pushed to my GitHub repository using GitHub Desktop. 
+        </div>       
+                
+        </span></p>
+        <div class="functions">
+        <p align="center"><b>My overall Capstone Project consists of an “user” class that houses the various member functions that perform the various operations. <br/>The API library consists of 9 main methods.</b> </p>
+        
+        <ol type="I">
+                        <li> The <span style="color: blue; font-weight: bold">open()</span> method collects user input to open a new user account on file.</li>
+                        <li> The <span style="color: blue; font-weight: bold">display()</span> method displays the user input information for user account. </li>
+                        <li> The <span style="color: blue; font-weight: bold">edit()</span> method allows the user to edit all of their account information, excluding their account number.</li>
+                        <li> The <span style="color: blue; font-weight: bold">add()</span> updates the deposit amount added within each user account balance.</li>
+                        <li> The <span style="color: blue; font-weight: bold">sub()</span> method updates the deposit amount subtracted after user successfully withdraws money. </li>
+                        <li> The <span style="color: blue; font-weight: bold">review()</span> method prints all user accounts on file in tabular format including account number, name, type, and balance amount.</li>
+                        <li> The <span style="color: blue; font-weight: bold">accountNum()</span> method returns the account number of a specific bank account. </li>
+                        <li> The <span style="color: blue; font-weight: bold">balAmt()</span> method returns the current balance amount of a user account.</li>
+                        <li> The <span style="color: blue; font-weight: bold">accType() </span>returns the type of account for each account.</li>
+                </ol>
+        </div>
+
+        <img src="repl.png" alt="Code" class="center">
+              
 	</body>
 </html>

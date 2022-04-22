@@ -6,14 +6,16 @@
 	</head>
 
 	<body>
-        <p><a href = "index.html"><< BACK</a></p>
+      <p><a href = "index.html"><< BACK</a></p>
 
-        <p>public member function</p>
+      <p id="public">public member function</p>
 
         <h2><span style="color: blue">user</span>::accType()</h2>
-        <hr>
         <h6>char accType() const;</h6>
-        <p>function to return type of account</p>
+        <hr>
+        
+        <p id="heading">Functionality</p>
+        <p>Function to return type of account. Only accepts checking or savings accounts on file.</p>
 
         <p id="heading">Parameters</p>
         <hr>
@@ -21,13 +23,31 @@
 
         <p id="heading">Return value</p>
         <hr>
-        <p>none</p>
+        <p>Account type (C/S): <br/>
+           C = Checkings Account <br/> S = Savings Account
+        </p>
 
         <p id="heading">Example</p>
         <hr>
-        <p></p>
+        <p><pre>#include < iostream >
+using namespace std;
+                           
+int main()
+{
+   char type;
+   cout << "Enter account type (C/S):" << endl;
+   cin.getline(type);
+                   
+   user ba;
+   ba.accType = accountType;
+   cout << accountType; 
+                    
+   return 0;
+}
+                     </pre></p>
         <p id="heading">Output:</p>
         <hr>
+        <p>Checking Account</p>
 
         <p id="heading">Member Functions</p>
         <hr>
@@ -60,11 +80,11 @@
              </tr>
              <tr>
                 <td><a href = "accountNum.html">accountNum()</a></td>
-                <td>Row 2, Column 2</td>
+                <td>Returns account number</td>
              </tr>
              <tr>
                 <td><a href = "balAmt.html">balAmt()</a></td>
-                <td>Row 2, Column 2</td>
+                <td>Returns balance amount</td>
              </tr>
          </table>
 
