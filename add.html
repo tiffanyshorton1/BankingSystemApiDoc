@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html>
 	<head>
-	<title> user::accType - C++ Reference </title>
-   <link rel="stylesheet" href="functionPage.css">
+	<title> user::add - C++ Reference </title>
+    <link rel="stylesheet" href="functionPage.css">
 	</head>
 
 	<body>
@@ -10,14 +10,15 @@
 
         <p>public member function</p>
 
-        <h2><span style="color: blue">user</span>::accType()</h2>
+        <h2><span style="color: blue">account</span>::add()</h2>
         <hr>
-        <h6>char accType() const;</h6>
-        <p>function to return type of account</p>
+        <h6>void add(int);</h6>
+        <p>Function to addosit money and add to balance amount.</p>
 
         <p id="heading">Parameters</p>
         <hr>
-        <p>none</p>
+        <p>int </p>
+        <p>An integer value.</p>
 
         <p id="heading">Return value</p>
         <hr>
@@ -25,10 +26,26 @@
 
         <p id="heading">Example</p>
         <hr>
-        <p></p>
+        <p><pre>#include < iostream >
+using namespace std;
+         
+int main()
+{
+  int deposit;
+  cout << "Enter deposit amount:" << endl;
+  cin >> deposit;
+ 
+  user ba;
+  ba.add(deposit);
+  
+  return 0;
+}
+</pre>
+
         <p id="heading">Output:</p>
         <hr>
-
+        <p>None</p>
+        
         <p id="heading">Member Functions</p>
         <hr>
 
@@ -47,10 +64,6 @@
                 <td>Edit account info</td>
              </tr>
              <tr>
-                <td><a href = "add.html">add(int)</a></td>
-                <td>Add money to account</td>
-             </tr>
-             <tr>
                 <td><a href = "sub.html">sub(int)</a></td>
                 <td>Withdraw money from account</td>
              </tr>
@@ -64,6 +77,10 @@
              </tr>
              <tr>
                 <td><a href = "balAmt.html">balAmt()</a></td>
+                <td>Row 2, Column 2</td>
+             </tr>
+             <tr>
+                <td><a href = "accType.html">accType()</a></td>
                 <td>Row 2, Column 2</td>
              </tr>
          </table>

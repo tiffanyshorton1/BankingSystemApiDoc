@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html>
 	<head>
-	<title> user::accType - C++ Reference </title>
-   <link rel="stylesheet" href="functionPage.css">
+	<title> user::open - C++ Reference </title>
+    <link rel="stylesheet" href="functionPage.css">
 	</head>
 
 	<body>
@@ -10,10 +10,16 @@
 
         <p>public member function</p>
 
-        <h2><span style="color: blue">user</span>::accType()</h2>
+        <h2><span style="color: rgb(31, 19, 185)">user</span>::open()</h2>
         <hr>
-        <h6>char accType() const;</h6>
-        <p>function to return type of account</p>
+        <h6>void open();</h6>
+        <p> This functions receives input data from the user for the user account. 
+           <br/>Information includes: 
+           <li>Account number</li>
+           <li>Account holder name</li>
+           <li>Type of Account (Checkings or Savings)</li>
+           <li>Initial addosit amount</li> 
+        </p>
 
         <p id="heading">Parameters</p>
         <hr>
@@ -25,28 +31,40 @@
 
         <p id="heading">Example</p>
         <hr>
-        <p></p>
-        <p id="heading">Output:</p>
+        <p><pre>#include < iostream >
+using namespace std;
+
+int main()
+{
+  user account;
+  account.open();
+
+  return 0;
+}
+   </pre></p>
+   <p id="heading">Output:</p>
         <hr>
+        <p><pre>
+   ENTER THE ACCOUNT NUMBER:
+   ENTER THE NAME OF THE ACCOUNT HOLDER NAME: 
+   WHAT KIND OF ACCOUNT ARE YOU OPENING? (“C” = Checking | ”S” = Savings): 
+   ENTER INITIAL DEPOSIT AMOUNT: 
+        </pre></p>
 
         <p id="heading">Member Functions</p>
         <hr>
 
         <table border = "1">
             <tr>
-               <td><a href = "open.html">open()</a></td>
-               <td>Inputs user data</td>
-            </tr>
-            
-            <tr>
                <td><a href = "display.html">display()</a></td>
                <td>Displays user account</td>
             </tr>
+            
             <tr>
-                <td><a href = "edit.html">edit()</a></td>
-                <td>Edit account info</td>
-             </tr>
-             <tr>
+               <td><a href = "edit.html">edit()</a></td>
+               <td>Edit account info</td>
+            </tr>
+            <tr>
                 <td><a href = "add.html">add(int)</a></td>
                 <td>Add money to account</td>
              </tr>
@@ -64,6 +82,10 @@
              </tr>
              <tr>
                 <td><a href = "balAmt.html">balAmt()</a></td>
+                <td>Row 2, Column 2</td>
+             </tr>
+             <tr>
+                <td><a href = "accType.html">accType()</a></td>
                 <td>Row 2, Column 2</td>
              </tr>
          </table>

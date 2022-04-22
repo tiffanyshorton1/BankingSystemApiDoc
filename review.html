@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html>
 	<head>
-	<title> user::accType - C++ Reference </title>
-   <link rel="stylesheet" href="functionPage.css">
+	<title> user::review - C++ Reference</title>
+    <link rel="stylesheet" href="functionPage.css">
 	</head>
 
 	<body>
@@ -10,10 +10,16 @@
 
         <p>public member function</p>
 
-        <h2><span style="color: blue">user</span>::accType()</h2>
+        <h2><span style="color: blue">user</span>::review()</h2>
         <hr>
-        <h6>char accType() const;</h6>
-        <p>function to return type of account</p>
+        <h6>void review() const;</h6>
+        <p>This function displays all user account data on file  in tabular format. 
+         <br/>Information includes: 
+         <li>Account number</li>
+         <li>Account holder name</li>
+         <li>Type of Account (Checkings or Savings)</li>
+         <li>Initial addosit amount</li>
+        </p>
 
         <p id="heading">Parameters</p>
         <hr>
@@ -25,9 +31,35 @@
 
         <p id="heading">Example</p>
         <hr>
-        <p></p>
+        <p><pre><p><pre>#include < iostream >
+using namespace std;
+         
+int main()
+{
+  cout << "Enter account number:" << endl;
+  cin >> accNum;
+  cout << "Enter account holder name:" << endl;
+  cin >> username;
+  cout << "Enter kind of account (C/S):" << endl;
+  cin >> kindOfAcc;
+  cout << "Enter deposit amount:" << endl;
+  cin >> deposit;
+ 
+  user ba;
+  ba.review();
+  
+  return 0;
+}
+            </pre></p>   
+            </pre></p>
         <p id="heading">Output:</p>
         <hr>
+        <pre>
+                        ACCOUNT HOLDER LIST
+         ====================================================
+         ACC NUM.     NAME        TYPE    BALANCE($)
+         ====================================================
+        </pre>
 
         <p id="heading">Member Functions</p>
         <hr>
@@ -55,15 +87,15 @@
                 <td>Withdraw money from account</td>
              </tr>
              <tr>
-                <td><a href = "review.html">review()</a></td>
-                <td>Display all accounts on file</td>
-             </tr>
-             <tr>
                 <td><a href = "accountNum.html">accountNum()</a></td>
                 <td>Row 2, Column 2</td>
              </tr>
              <tr>
                 <td><a href = "balAmt.html">balAmt()</a></td>
+                <td>Row 2, Column 2</td>
+             </tr>
+             <tr>
+                <td><a href = "accType.html">accType()</a></td>
                 <td>Row 2, Column 2</td>
              </tr>
          </table>

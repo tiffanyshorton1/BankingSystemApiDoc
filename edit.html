@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html>
 	<head>
-	<title> user::accType - C++ Reference </title>
-   <link rel="stylesheet" href="functionPage.css">
+	<title> user::edit - C++ Reference </title>
+    <link rel="stylesheet" href="functionPage.css">
 	</head>
 
 	<body>
@@ -10,10 +10,16 @@
 
         <p>public member function</p>
 
-        <h2><span style="color: blue">user</span>::accType()</h2>
+        <h2><span style="color: blue">user</span>::edit()</h2>
         <hr>
-        <h6>char accType() const;</h6>
-        <p>function to return type of account</p>
+        <h6>void edit_account();</h6>
+        <p>Function to update data within the user account. 
+         <br/>Information includes: 
+         <li>Account number</li>
+         <li>Account holder name</li>
+         <li>Type of Account (Checkings or Savings)</li>
+         <li>Initial addosit amount</li>
+        </p>
 
         <p id="heading">Parameters</p>
         <hr>
@@ -25,11 +31,30 @@
 
         <p id="heading">Example</p>
         <hr>
-        <p></p>
-        <p id="heading">Output:</p>
-        <hr>
+        <p><pre>#include < iostream >
+using namespace std;
 
-        <p id="heading">Member Functions</p>
+int main()
+{
+  cout << "Enter account number:" << endl;
+  cin >> accNum;
+ 
+  user ba;
+  ba.edit();
+  
+  return 0;
+}
+   </pre></p>
+   <p id="heading">Output:</p>
+   <hr>
+        <p><pre>
+         ACCOUNT NO. :
+         EDIT ACCOUNT HOLDER NAME :
+         EDIT ACCOUNT TYPE (C/S) :
+         EDIT BALANCE AMOUNT : 
+              </pre></p>
+
+              <p id="heading">Member Functions</p>
         <hr>
 
         <table border = "1">
@@ -43,10 +68,6 @@
                <td>Displays user account</td>
             </tr>
             <tr>
-                <td><a href = "edit.html">edit()</a></td>
-                <td>Edit account info</td>
-             </tr>
-             <tr>
                 <td><a href = "add.html">add(int)</a></td>
                 <td>Add money to account</td>
              </tr>
@@ -64,6 +85,10 @@
              </tr>
              <tr>
                 <td><a href = "balAmt.html">balAmt()</a></td>
+                <td>Row 2, Column 2</td>
+             </tr>
+             <tr>
+                <td><a href = "accType.html">accType()</a></td>
                 <td>Row 2, Column 2</td>
              </tr>
          </table>
